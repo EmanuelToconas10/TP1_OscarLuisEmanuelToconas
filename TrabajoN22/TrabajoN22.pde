@@ -1,26 +1,21 @@
-void setup(){
+int x = 30;
+int y = 75;
+int liney = 100;
+void setup() {
   size(600,600);
-  int lineaX = 0;
-  int lineaY = 100;
-  int circuloY = 75;
-  int distanciaCirculo = 30;
+  do
+  {
+    strokeWeight(5);
+    for(int x = 30; x < width; x = x + 60) {
+      fill(random(255),random(255),random(255));
+      circle(x,y,50);
+    }
+    y = y + 200;
+    line(0,liney,width,liney);
+    liney = liney + 100;
+  }
+  while (x<=height);
+}
+void draw() {
 
-  do{
-            int circuloX = distanciaCirculo;
-
-do{
-    stroke(#008DFC);
-    line(lineaX,lineaY,width,lineaY); 
-    fill(random(255), random(255), random(255)); 
-    stroke(0);
-    strokeWeight(2);
-    ellipse(circuloX,circuloY,50,50);
-    circuloX += distanciaCirculo*2;
-
- 
-}while(circuloX < width);
-    lineaY += 100;
-    circuloY += 200;
-    
-}while(lineaY < height);
 }

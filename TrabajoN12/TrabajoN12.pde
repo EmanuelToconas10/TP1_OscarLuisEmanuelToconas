@@ -10,7 +10,7 @@ void setup() {
 void draw() {
   background(0);
   text(mensaje_saludo, 100, 100);
-  textSize(32);
+  textSize(80);
 
 }
 

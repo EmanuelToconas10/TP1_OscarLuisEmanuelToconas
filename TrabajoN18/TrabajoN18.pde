@@ -3,8 +3,8 @@ float a, b, c;
 void setup() {
   size(400, 200);
   background(255);
-  float a=1;
-  float b=0;
+  float a=2;
+  float b=1;
   float c=-1;
   
   // Calcular el discriminante

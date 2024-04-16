@@ -1,4 +1,4 @@
-int num1=110, num2=12;
+int num1=150, num2=15;
 
 int suma = num1 + num2;
 println("el resultado de la suma es: " + suma);

@@ -1,26 +1,16 @@
-int distanciaEntreRect;
-int alto;
-int ancho;
-PVector coordenadasRect;
-
-void setup() {
-  size(440, 420);
-  background(235,235,200);
-  distanciaEntreRect = 20;
-  ancho = 40;
-   alto = 20;
-  coordenadasRect = new PVector(distanciaEntreRect, distanciaEntreRect);
+int x = 20;
+int y = 20;
+void setup () {
+  size (440,420);
+  background(#F5DAA1);
 }
 
-void draw() {
-  dibujarRectangulo();
-}
-
-void dibujarRectangulo() {
-  for (float y = coordenadasRect.y; y < height; y += (alto + distanciaEntreRect)) {
-    for (float x = coordenadasRect.x; x < width; x += (ancho + distanciaEntreRect)) {
-     rect(x, y, ancho, alto);
-     fill(255,0,0);
+void draw(){
+  fill(#FF0505);
+  for(int x = 20; x<=width-60;x=x+60) {
+    for(int y=20; y<=height-40;y=y+40) {
+      rect(x,y,40,20);
     }
+    rect(x,20,40,20);
   }
 }
